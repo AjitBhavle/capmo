@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Capmo_Case_Study" duration-ms="12552" started-at="2021-12-13T17:46:24Z" finished-at="2021-12-13T17:46:36Z">
+    <groups>
+    </groups>
+    <test name="Capmo" duration-ms="12552" started-at="2021-12-13T17:46:24Z" finished-at="2021-12-13T17:46:36Z">
+      <class name="com.capmo.swaglab.main.Checkout">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac]" name="startReport" is-config="true" duration-ms="4869" started-at="2021-12-13T17:46:24Z" finished-at="2021-12-13T17:46:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="testLogger(org.testng.ITestResult)[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac]" name="testLogger" is-config="true" duration-ms="7" started-at="2021-12-13T17:46:29Z" finished-at="2021-12-13T17:46:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginToSwagLab status=SUCCESS method=Checkout.loginToSwagLab()[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogger -->
+        <test-method status="PASS" signature="testLogger(org.testng.ITestResult)[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac]" name="testLogger" is-config="true" duration-ms="7" started-at="2021-12-13T17:46:29Z" finished-at="2021-12-13T17:46:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testE2E status=SUCCESS method=Checkout.testE2E()[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogger -->
+        <test-method status="PASS" signature="loginToSwagLab()[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac]" name="loginToSwagLab" duration-ms="7030" started-at="2021-12-13T17:46:29Z" finished-at="2021-12-13T17:46:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToSwagLab -->
+        <test-method status="PASS" signature="testE2E()[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac]" name="testE2E" duration-ms="14" started-at="2021-12-13T17:46:29Z" finished-at="2021-12-13T17:46:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testE2E -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac]" name="getResult" is-config="true" duration-ms="1" started-at="2021-12-13T17:46:29Z" finished-at="2021-12-13T17:46:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testE2E status=SUCCESS method=Checkout.testE2E()[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac]" name="getResult" is-config="true" duration-ms="0" started-at="2021-12-13T17:46:36Z" finished-at="2021-12-13T17:46:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginToSwagLab status=SUCCESS method=Checkout.loginToSwagLab()[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac]" name="endReport" is-config="true" duration-ms="621" started-at="2021-12-13T17:46:36Z" finished-at="2021-12-13T17:46:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.capmo.swaglab.main.Checkout@146ba0ac]" name="afterClass" is-config="true" duration-ms="0" started-at="2021-12-13T17:46:37Z" finished-at="2021-12-13T17:46:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.capmo.swaglab.main.Checkout -->
+    </test> <!-- Capmo -->
+  </suite> <!-- Capmo_Case_Study -->
+</testng-results>

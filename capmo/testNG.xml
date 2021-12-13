@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"> 
+<suite name="Capmo_Case_Study" parallel="methods" thread-count="3">
+    <test name="Capmo">
+    <classes>
+      <class name="com.capmo.swaglab.main.Checkout">
+     	 <methods>
+            <include name="loginToSwagLab" />
+     	    <include name="testE2E" />
+     	 </methods>
+      </class>
+    </classes>
+    </test>
+</suite> 

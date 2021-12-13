@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Capmo_Case_Study]" parallel="methods">
+  <test thread-count="3" name="Capmo(failed)" parallel="methods">
+    <classes>
+      <class name="com.capmo.swaglab.main.Checkout">
+        <methods>
+          <include name="endReport"/>
+          <include name="getResult"/>
+          <include name="loginToSwagLab"/>
+          <include name="afterClass"/>
+          <include name="startReport"/>
+          <include name="testLogger"/>
+        </methods>
+      </class> <!-- com.capmo.swaglab.main.Checkout -->
+    </classes>
+  </test> <!-- Capmo(failed) -->
+</suite> <!-- Failed suite [Capmo_Case_Study] -->
