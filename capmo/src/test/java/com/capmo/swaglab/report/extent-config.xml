@@ -17,12 +17,12 @@
   <protocol>https</protocol> 
 <!--  title of the document 
   --> 
--- <documentTitle>Flink</documentTitle>
+-- <documentTitle>Capmo</documentTitle>
 <!--  report name - displayed at top-nav 
   --> 
-<reportName>Flink_CaseStudy:</reportName> 
+<reportName>Capmo_CaseStudy:</reportName> 
 
-<reportHeadline>Flink_CaseStudy</reportHeadline> 
+<reportHeadline>Capmo_CaseStudy</reportHeadline> 
 
 <!--  global date format override 
   --> 

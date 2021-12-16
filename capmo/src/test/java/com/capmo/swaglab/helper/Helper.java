@@ -32,14 +32,13 @@ public class Helper extends Base {
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(element));
 //	}
 	
-	public static void explicitWait(WebDriver driver, WebElement locator, int timeout)
+	public static void explicitWait(WebDriver driver, WebElement webElement, int timeout)
 	 {
-	        new WebDriverWait(driver,timeout).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.visibilityOf(locator));
-	        locator.click();
+	        new WebDriverWait(driver,timeout).ignoring(StaleElementReferenceException.class).until(ExpectedConditions.visibilityOf(webElement));
 
 	 }
 	
-	public void switchWindow() throws InterruptedException {
+	public void switchWindow(WebDriver driver) throws InterruptedException {
 
 		// Storing parent window reference into a String Variable
 		// Switching from parent window to child window

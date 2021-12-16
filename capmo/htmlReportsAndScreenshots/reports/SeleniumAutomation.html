@@ -15,7 +15,7 @@
 		<meta name='extentx' id='extentx' content='' />
 		
 		<title>
-				ExtentReports 2.0
+				Capmo
 		</title>
 		
 		
@@ -24,15 +24,13 @@
 		
 		<style>
 				
-            
-                
-            
-        
+    
+  
 		</style>
 	</head>
 	
 	
-	<body class='extent default standard hide-overflow'>
+	<body class='extent default dark hide-overflow'>
 		<!-- nav -->
 		<nav>
 			<div class='logo-container blue darken-2'>
@@ -43,17 +41,18 @@
 			</div>
 			<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 				<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
+					<li class='analysis waves-effect'><a href='#!' class='categories-view' onclick="_updateCurrentStage(1)"><i class='mdi-maps-local-offer'></i>Categories</a></li>
 				<li class='analysis waves-effect'>
 					<a href='#!' onclick="_updateCurrentStage(-1)" class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a>
 				</li>
 			</ul>
-			<span class='report-name'>Automation Report</span> <span class='report-headline'></span>
+			<span class='report-name'>Capmo_CaseStudy:</span> <span class='report-headline'>Capmo_CaseStudy</span>
 			<ul class='right hide-on-med-and-down nav-right'>
 				<li class='theme-selector' alt='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");' title='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");'>
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2021-12-13 23:16:36</span>
+					<span class='suite-started-time'>2021-12-16 16:28:36</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -83,25 +82,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 0m 7s+624ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 0m 23s+21ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 0m 7s+624ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 0m 23s+21ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2021-12-13 23:16:29</span> 
+							<span class='panel-lead suite-started-time'>2021-12-16 16:28:13</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2021-12-13 23:16:36</span> 
+							<span class='panel-lead suite-ended-time'>2021-12-16 16:28:36</span> 
 						</div> 
 					</div>
 				</div>
@@ -184,13 +183,34 @@
 										</tr>
 										<tr>
 											<td>Environment</td>
-											<td>Wheather Automation Testing</td>
+											<td>Capmo Automation Testing</td>
 										</tr>
 								</tbody>
 							</table>
 						</div>
 					</div>
 				</div>
+					<div class='category-summary-view'>
+						<div class='col l4 m6 s12'>
+							<div class='card-panel'>
+								<span class='label info outline right'>Categories</span>
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+										</tr>
+									</thead>
+									<tbody>
+											<tr>
+												<td>
+													Smoke Test
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
 			</div>
 			<!-- /dashboard -->
 			
@@ -214,6 +234,16 @@
 									<li class='clear'><a href='#!'>Clear Filters</a></li>
 								</ul>
 							</div>
+								<div>
+									<a class='dropdown-button btn-floating btn-small waves-effect waves-light grey category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+										<i class='mdi-maps-local-offer'></i>
+									</a>
+									<ul id='category-toggle' class='dropdown-content'>
+											<li class='Smoke Test'><a href='#!'>Smoke Test</a></li>
+										<li class='divider'></li>
+										<li class='clear'><a href='#!'>Clear Filters</a></li>
+									</ul>
+								</div>
 							<div>
 								<a class='btn-floating btn-small waves-effect waves-light grey' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
 									<i class='mdi-navigation-close'></i>
@@ -241,15 +271,15 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active pass ' extentid='3982b627-c45f-4bad-be15-aed1d500ed4d'>
+										<li class='collection-item test displayed active pass ' extentid='5006b448-103f-4a8a-b740-22f7d692e21a'>
 											<div class='test-head'>
-												<span class='test-name'>Checkout :: testE2E </span>
+												<span class='test-name'>Checkout :: bookItemEnd2End </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
 												<span class='category-assigned hide  smoketest'></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-12-13 23:16:29</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-12-16 16:28:15</span>
 													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
 													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
 												</div>
@@ -274,13 +304,38 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>23:16:29</td>
-																	<td class='step-details'>Third TC21</td>
+																	<td class='timestamp'>16:28:23</td>
+																	<td class='step-details'>User has logged in successfully</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>16:28:24</td>
+																	<td class='step-details'>Items added in to cart are: [{29.99=Sauce Labs Backpack, 9.99=Sauce Labs Bike Light}]</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>16:28:25</td>
+																	<td class='step-details'>Items added in to cart are: [{29.99=Sauce Labs Backpack, 9.99=Sauce Labs Bike Light}]</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>16:28:27</td>
+																	<td class='step-details'>Items actual subTotal is: 39.98 Items expected subTotal is: 39.98</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>16:28:27</td>
+																	<td class='step-details'>Items actual total is: 43.18 Items expected total is: 43.18</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>16:28:28</td>
+																	<td class='step-details'>Order placed successfully...</td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>23:16:29</td>
-																	<td class='step-details'>Test Case Passed is testE2E</td>
+																	<td class='timestamp'>16:28:28</td>
+																	<td class='step-details'>Test Case Passed is bookItemEnd2End</td>
 																</tr>
 														</tbody>
 													</table>
@@ -289,17 +344,17 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass ' extentid='a9c290aa-93a2-4982-a51c-eda9bb3b0301'>
+										<li class='collection-item test displayed active pass ' extentid='63c53a21-35d5-4daa-85c8-7b1b2aa02215'>
 											<div class='test-head'>
-												<span class='test-name'>Checkout :: loginToSwagLab </span>
+												<span class='test-name'>Checkout :: validateFilterOrder </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
 												<span class='category-assigned hide  smoketest'></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-12-13 23:16:29</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2021-12-16 16:28:28</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2021-12-16 16:28:36</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+1ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -322,13 +377,18 @@
 														<tbody>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>23:16:36</td>
+																	<td class='timestamp'>16:28:36</td>
 																	<td class='step-details'>User has logged in successfully</td>
 																</tr>
 																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>16:28:36</td>
+																	<td class='step-details'>Actual filter order is: [Name (A to Z), Name (Z to A), Price (low to high), Price (high to low)] Expected filter order is: [Name (A to Z), Name (Z to A), Price (low to high), Price (high to low)]</td>
+																</tr>
+																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>23:16:36</td>
-																	<td class='step-details'>Test Case Passed is loginToSwagLab</td>
+																	<td class='timestamp'>16:28:36</td>
+																	<td class='step-details'>Test Case Passed is validateFilterOrder</td>
 																</tr>
 														</tbody>
 													</table>
@@ -365,6 +425,75 @@
 			<!-- /tests -->
 			
 			<!-- categories -->
+				<div id='categories-view' class='row _addedTable hide'>
+					<div class='col _addedCell1'>
+						<div class='contents'>
+							<div class='card-panel heading'>
+								<h5>Categories</h5>
+							</div>
+							<div class='card-panel filters'>
+								<div class='search' alt='Search tests' title='Search tests'>
+									<div class='input-field left'>
+										<input id='searchTests' type='text' class='validate' placeholder='Search...'>
+									</div>
+									<a href="#" class='btn-floating btn-small waves-effect waves-light blue lighten-1'>
+										<i class='mdi-action-search'></i>
+									</a>
+								</div>
+							</div>
+							<div class='card-panel no-padding-h no-padding-v'>
+								<div class='wrapper'>
+									<ul id='cat-collection' class='cat-collection'>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>Smoke Test</span>
+												</div>
+												<div class='category-status-counts'>
+														<span class='pass label dot'>Pass: 1</span>
+												</div>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Status</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr class='pass'>
+																		<td>2021-12-16 16:28:28</td>
+																		<td><span class='category-link linked' extentid='63c53a21-35d5-4daa-85c8-7b1b2aa02215'>Checkout :: validateFilterOrder</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+															<tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='cat-details-wrapper' class='col _addedCell2'>
+						<div class='contents'>
+							<div class='card-panel details-view'>
+								<h5 class='cat-name'></h5>
+								<div class='cat-container'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			<!-- /categories -->
 			
 			<!-- exceptions -->
@@ -434,12 +563,11 @@
 		<script>$(document).ready(function() { $('.logo span').html('ExtentReports'); });</script>
 		<script>
 				
-            
-                $(document).ready(function() {
-                    
-                });
-            
-        
+ 
+  $(document).ready(function() {
+                         });
+   
+  
 		</script>
 	</body>
 </html>

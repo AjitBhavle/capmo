@@ -1,13 +1,16 @@
 package com.capmo.swaglab.pom;
 
+import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage {
 
-	public WebDriver driver;
-
+	private WebDriver driver;
+	public Properties prop;
+	
 	private By uname = By.cssSelector("#user-name");
 	private By pass = By.cssSelector("#password");
 	private By loginButton = By.cssSelector("#login-button");
