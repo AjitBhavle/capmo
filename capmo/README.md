@@ -19,9 +19,10 @@ This is case study repository
 
 # Execution steps:
 
-  ## Command line Execution:    
+  ## Command line Execution:   
+  		- Clone the repo and execute below command 
      	- Enter below command on command line and execute your TC.
-        - mvn test -Dbrowser=chrome
+          mvn test -Dbrowser=chrome
   
 
   ## From eclipse execution: 
