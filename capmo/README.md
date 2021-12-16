@@ -9,25 +9,28 @@ This is case study repository
   
 # Parellel execution:
   - Parellel test case execution support is there in framework.
-  - To execute test cases parellelly add "parellel" attribute in testNG.xml file.(located at project root folder).
+  - To execute test cases parellelly add "parellel = methods/classes/tests" attribute in suite tag of testNG.xml file.(located at project root folder).
   - You can execute parellel test cases by methods, tests, classes by changing above attribute values in testNG.xml file
 
 # Multiple Browser support:
 
   - This framework supports for multiple browser as you need to change browser parameter in "data.prperties" file(/capmo/src/test/java/com/capmo/swaglab/resources)
+  - Currently only "chromedriver and firefox" support added for execution.
 
 # Execution steps:
 
-  ## Command line Execution:
-     - If you are executing test cases from command line then make below changes in "Base.java" file changes.
-        - Uncomment this line in 'openBrowser()' method if you are sending parameter from Maven (String browserName=System.getProperty("browser");)
-        - comment this line if you are sending parameter from Maven (String browserName = prop.getProperty("browser");)
-     
-     - Enter below command on command line and execute your TC.
-       - mvn test -Dbrowser=chrome
+  ## Command line Execution:    
+     	- Enter below command on command line and execute your TC.
+        - mvn test -Dbrowser=chrome
   
 
   ## From eclipse execution: 
+  
+  		## Before doing eclipse execution please do below changes in Base.java file(/capmo/src/test/java/com/capmo/swaglab/base)
+   			 - If you are executing test cases from command line then make below changes in "Base.java" file changes.
+       		 - Uncomment this line in 'openBrowser()' method if you are sending parameter from Maven 
+       		 	(String browserName=System.getProperty("browser");)
+        	 - comment this line if you are sending parameter from Maven (String browserName = prop.getProperty("browser");)
      -  Right click on "testNG.xml" file and run as TestNG then you will see execution on console.
      -  Html report will get generated in "/capmo/htmlReportsAndScreenshots/reports/" folder.
      -  Screenshots will get generated in "/capmo/htmlReportsAndScreenshots/screenshots/" folder.
